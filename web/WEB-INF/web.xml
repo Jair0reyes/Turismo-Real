@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>LoginUsuario</servlet-name>
+        <servlet-class>Servlet.LoginUsuario</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>VerOferta</servlet-name>
+        <servlet-class>Servlet.VerOferta</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Comprar</servlet-name>
+        <servlet-class>Servlet.Comprar</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Reservas</servlet-name>
+        <servlet-class>Servlet.Reservas</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginUsuario</servlet-name>
+        <url-pattern>/LoginUsuario</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>VerOferta</servlet-name>
+        <url-pattern>/VerOferta</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Comprar</servlet-name>
+        <url-pattern>/Comprar</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Reservas</servlet-name>
+        <url-pattern>/Reservas</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
